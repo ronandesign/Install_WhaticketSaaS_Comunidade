@@ -16,7 +16,7 @@
 
 ## Para Instalação você precisa:
 
-Uma VPS Ubunto 20.04 (Configuração recomendada: 3 VCPU's + 4 GB RAM)
+Uma VPS Ubuntu 20.04 (Configuração recomendada: 3 VCPU's + 4 GB RAM)
 
 Subdominio para Frontend
 
@@ -28,9 +28,9 @@ Email válido para certificação SSL
 
 To install the SSL certificate, follow the **[instructions](https://certbot.eff.org/instructions?ws=other&os=ubuntufocal)** below.
 
+## Link p/ Página de Apoio
 
-
-
+Acesse: https://ead.maanabee.com.br/mod/forum/discuss.php?d=2#p2
 
 
 ## Consultoria e contato:
