@@ -32,6 +32,10 @@ To install the SSL certificate, follow the **[instructions](https://certbot.eff.
 
 Acesse: https://ead.maanabee.com.br/mod/forum/discuss.php?d=2#p2
 
+## Vamos instalar?
+
+    cd /home && git clone https://github.com/ronandesign/Install_WhaticketSaaS_Comunidade.git
+
 
 ## Consultoria e contato:
 
