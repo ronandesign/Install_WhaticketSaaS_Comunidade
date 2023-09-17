@@ -12,7 +12,7 @@
 
 </div>
   
-<div align="center"><img src="https://patrulhasolutions.com.br/wp-content/uploads/2022/04/cropped-logo-1.png" style="width: 80% !important;"></div>
+<div align="center"><img src="https://crm.patrulhasolutions.com.br/uploads/company/b31c6151b72860d92e6eb600b6b9a098.png" style="width: 80% !important;"></div>
 
 ## WhatsApp-Api-NodeJs
 
