@@ -14,14 +14,18 @@
   
 <div align="center"><img src="https://crm.patrulhasolutions.com.br/uploads/company/b31c6151b72860d92e6eb600b6b9a098.png" style="width: 80% !important;"></div>
 
-## WhatsApp-Api-NodeJs
+## Para Instalação você precisa:
 
-This project is based on the [CodeChat](https://github.com/code-chat-br/whatsapp-api). The original project is an implementation of [Baileys](https://github.com/WhiskeySockets/Baileys), serving as a Restful API service that controls WhatsApp functions.</br> 
-The code allows the creation of multiservice chats, service bots, or any other system that utilizes WhatsApp. The documentation provides instructions on how to set up and use the project, as well as additional information about its features and configuration options.
+Uma VPS Ubunto 20.04 (Configuração recomendada: 3 VCPU's + 4 GB RAM)
+Subdominio para Frontend
+Subdominio para API - backoffice
+Email válido para certificação SSL
 
 ## SSL
 
 To install the SSL certificate, follow the **[instructions](https://certbot.eff.org/instructions?ws=other&os=ubuntufocal)** below.
+
+
 
 
 
