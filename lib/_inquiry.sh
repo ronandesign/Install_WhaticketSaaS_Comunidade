@@ -11,7 +11,7 @@ get_mysql_root_password() {
 get_link_git() {
   
   print_banner
-  printf "${WHITE} 💻 Insira o link do GITHUB do seu Multiconversa que deseja instalar:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Insira o link do GITHUB do seu Maanabee Whats que deseja instalar:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " link_git
 }
@@ -201,14 +201,14 @@ software_dominio() {
 inquiry_options() {
   
   print_banner
-  printf "${WHITE} 💻 Bem vindo(a) ao Gerenciador Multiconversa, Selecione abaixo a proxima ação!${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Bem vindo(a) ao Gerenciador Maanabee Whats, Selecione abaixo a proxima ação!${GRAY_LIGHT}"
   printf "\n\n"
-  printf "   [0] Instalar Multiconversa\n"
-  printf "   [1] Atualizar Multiconversa\n"
-  printf "   [2] Deletar Multiconversa\n"
-  printf "   [3] Bloquear Multiconversa\n"
-  printf "   [4] Desbloquear Multiconversa\n"
-  printf "   [5] Alter. dominio Multiconversa\n"
+  printf "   [0] Instalar Maanabee Whats\n"
+  printf "   [1] Atualizar Maanabee Whats\n"
+  printf "   [2] Deletar Maanabee Whats\n"
+  printf "   [3] Bloquear Maanabee Whats\n"
+  printf "   [4] Desbloquear Maanabee Whats\n"
+  printf "   [5] Alter. dominio Maanabee Whats\n"
   printf "\n"
   read -p "> " option
 
