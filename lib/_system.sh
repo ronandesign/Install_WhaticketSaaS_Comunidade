@@ -7,6 +7,7 @@
 # Arguments:
 #   None
 #######################################
+
 system_create_user() {
   print_banner
   printf "${WHITE} 💻 Agora, vamos criar o usuário para a instancia...${GRAY_LIGHT}"
@@ -279,11 +280,8 @@ system_node_install() {
   printf "\n\n"
 
   sleep 2
-
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.41.2/install.sh | bash
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  nvm install --lts
+  sudo snap install node --classic --channel=20
+  
   sleep 2
   npm install -g npm@latest
 
@@ -298,6 +296,10 @@ EOF
 
   sleep 2
 }
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
 #######################################
 # installs docker
 # Arguments:
