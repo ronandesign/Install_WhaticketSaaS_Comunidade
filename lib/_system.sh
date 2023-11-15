@@ -7,6 +7,7 @@
 # Arguments:
 #   None
 #######################################
+
 system_create_user() {
   print_banner
   printf "${WHITE} 💻 Agora, vamos criar o usuário para a instancia...${GRAY_LIGHT}"
@@ -15,7 +16,7 @@ system_create_user() {
   sleep 2
 
   sudo su - root <<EOF
-  useradd -m -p $(openssl passwd -crypt ${mysql_root_password}) -s /bin/bash -G sudo deploy
+  useradd -m -p $(openssl passwd -5 ${mysql_root_password}) -s /bin/bash -G sudo deploy
   usermod -aG sudo deploy
 EOF
 
@@ -279,13 +280,12 @@ system_node_install() {
   printf "\n\n"
 
   sleep 2
-
-  sudo su - root <<EOF
-  curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-  apt-get install -y nodejs
+  sudo snap install node --classic --channel=20
+  
   sleep 2
   npm install -g npm@latest
-  sleep 2
+
+  sudo su - root <<EOF
   sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
   wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
   sudo apt-get update -y && sudo apt-get -y install postgresql
@@ -296,6 +296,10 @@ EOF
 
   sleep 2
 }
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
 #######################################
 # installs docker
 # Arguments:
